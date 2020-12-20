@@ -41,6 +41,7 @@ define('CRAYON_UTIL_DIR', crayon_s('util'));
 define('CRAYON_CSS_DIR', crayon_s('css'));
 define('CRAYON_CSS_SRC_DIR', CRAYON_CSS_DIR . crayon_s('src'));
 define('CRAYON_CSS_MIN_DIR', CRAYON_CSS_DIR . crayon_s('min'));
+define('CRAYON_BOWER_DIR', crayon_s('bower_components'));
 define('CRAYON_JS_DIR', crayon_s('js'));
 define('CRAYON_JS_SRC_DIR', CRAYON_JS_DIR . crayon_s('src'));
 define('CRAYON_JS_MIN_DIR', CRAYON_JS_DIR . crayon_s('min'));
@@ -81,10 +82,13 @@ define('CRAYON_JS_ADMIN', CRAYON_JS_SRC_DIR . 'crayon_admin.js');
 define('CRAYON_JS_UTIL', CRAYON_JS_SRC_DIR . 'util.js');
 define('CRAYON_CSSJSON_JS', CRAYON_JS_SRC_DIR . 'cssjson.js');
 
-define('CRAYON_CSS_JQUERY_COLORPICKER', CRAYON_JS_DIR . 'jquery-colorpicker/jquery.colorpicker.css');
-define('CRAYON_JS_JQUERY_COLORPICKER', CRAYON_JS_DIR . 'jquery-colorpicker/jquery.colorpicker.js');
-define('CRAYON_JS_TINYCOLOR', CRAYON_JS_DIR . 'tinycolor-min.js');
+define('CRAYON_CSS_JQUERY_COLORPICKER', CRAYON_BOWER_DIR . 'jquery-colorpicker/colorpicker.min.css');
+define('CRAYON_JS_JQUERY_COLORPICKER', CRAYON_BOWER_DIR . 'jquery-colorpicker/colorpicker.min.js');
+define('CRAYON_JS_TINYCOLOR', CRAYON_BOWER_DIR . 'tinycolor/dist/tinycolor-min.js');
 define('CRAYON_TAG_EDITOR_JS', 'crayon_tag_editor.js');
+// CRAYON_BOWER_DIR
+// define('CRAYON_COLORBOX_JS', CRAYON_BOWER_DIR . 'jquery-colorbox/jquery.colorbox-min.js');
+// define('CRAYON_COLORBOX_CSS', CRAYON_BOWER_DIR . 'jquery-colorbox/colorbox.css');
 define('CRAYON_COLORBOX_JS', 'colorbox/jquery.colorbox-min.js');
 define('CRAYON_COLORBOX_CSS', 'colorbox/colorbox.css');
 define('CRAYON_TAG_EDITOR_PHP', CRAYON_TAG_EDITOR_PATH . 'crayon_tag_editor_wp.class.php');
